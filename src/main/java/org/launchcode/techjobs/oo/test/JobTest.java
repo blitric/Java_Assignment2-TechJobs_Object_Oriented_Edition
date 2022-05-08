@@ -60,7 +60,7 @@ public class JobTest {
 
     @Test
     public void testToStringHandlesEmptyField() {
-        Job job1 = new Job("Product tester", new Employer(), new Location(), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        Job job1 = new Job("Product tester", new Employer(""), new Location(""), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         assertEquals("\nID: 1\nName: Product tester\nEmployer: Data not available\nLocation: Data not available\nPosition Type: Quality control\nCore Competency: Persistence\n", job1.toString());
     }
 
